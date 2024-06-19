@@ -2,6 +2,7 @@ package com.codingrecipe.board.controller;
 
 import com.codingrecipe.board.dto.BoardDTO;
 import com.codingrecipe.board.service.BoardService;
+import com.codingrecipe.board.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,6 +19,7 @@ import java.util.List;
 @RequestMapping("/board")
 public class BoardController {
   private final BoardService boardService;
+  private final CommentService commentService;
 
   @GetMapping("/save")
   public String saveForm() {

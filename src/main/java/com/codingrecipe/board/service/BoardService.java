@@ -56,7 +56,6 @@ public class BoardService {
         boardFileRepository.save(boardFileEntity);
       }
     }
-
   }
 
   @Transactional
