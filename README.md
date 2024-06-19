@@ -17,3 +17,16 @@
     - 수정 처리
 5. 글삭제(/board/delete/{id})
 6. 페이징처리(/board/paging)
+   - /board/paging?page=2
+   - 게시글 14
+      - 한 페이지에 5개씩 => 3개
+      - 한 페이지에 3개씩 => 5개
+
+
+
+## mysql DataBase 계정 생성 및 권한 부여
+```
+create database board;
+create user root@localhost identified by '1234';
+grant all privileges on board.* to root@localhost;
+```
